@@ -7,22 +7,21 @@ export class MenuService {
 
   getMenu(): Array<any> {
     const menu = [
-      { name: 'inicio', path: './inicio', children: [] },
+      { name: '', path: './inicio', children: [] },
       {
         name: 'estamos-fazendo',
         path: './estamos-fazendo',
         children: [
           {
-            name: 'books',
-            path: './books',
-            children: [
-              {
-                name: 'THE FELLOWSHIP OF THE RING Details',
-                path: './book1'
-              },
+            name: 'acoes-programas',
+            path: './acoes-programas',
 
-            ]
-          }
+          },
+          {
+            name: 'carta-servicos',
+            path: './carta-servicos',
+
+          },
         ]
       },
     ];

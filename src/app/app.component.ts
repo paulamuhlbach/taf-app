@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
 
     this.menu = this.menuService.getMenu();
     this.listenRouting();
+    console.log(this.menu);
   }
 
  listenRouting() {

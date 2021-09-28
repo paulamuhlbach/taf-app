@@ -11,13 +11,13 @@ export const routes: Routes = [
 	{
 		path:'inicio',
 		loadChildren: './home/home.module#HomeModule',
-    data: { breadcrumb: 'inicio' }
+    //data: { breadcrumb: 'inicio' }
 	},
 
 	{
 		path:'estamos-fazendo',
 		loadChildren: './paginas/estamos-fazendo/estamos-fazendo.module#EstamosFazendoModule',
-    data: { breadcrumb: 'estamos-fazendo' }
+    //data: { breadcrumb: 'estamos-fazendo' }
 	}
 
 ];
