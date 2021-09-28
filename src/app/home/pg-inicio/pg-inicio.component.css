@@ -14,11 +14,25 @@
 }
 
 .inicio-linha1{
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 
 }
 .inicio-linha2{
   background: #E4F8CB;
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 
 }
