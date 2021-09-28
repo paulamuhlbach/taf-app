@@ -1,12 +1,53 @@
 .container-widget{
 
+  border-right: 3px dashed #b4d8da;
+  width: 580px;
+  padding-right: 40px;
+  margin: 0;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.linha1-reuncia{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #095783;
+
+}
+.linha2-reuncia{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
+  padding-top: 20px
+}
+.linha3-reuncia{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+.dados-renuncia{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3C8994;
+}
+.acoes{
+  display: flex;
+  justify-content:space-evenly;
+  padding-top: 20px
 
 }
-.grafico{
-  margin-left: 0;
-
+.img-renuncia{
+  padding-right: 45px;
 }
+.bt-compartilhar{
+  padding-right: 20px;
+}
+
+

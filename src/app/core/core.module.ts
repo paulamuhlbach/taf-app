@@ -6,6 +6,7 @@ import { MenuComponent } from './header/menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormConsultaPortalComponent } from './header/form-consulta-portal/form-consulta-portal.component';
 import { MapaSiteComponent } from './mapa-site/mapa-site.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MapaSiteComponent } from './mapa-site/mapa-site.component';
     FooterComponent,
     MenuComponent,
     FormConsultaPortalComponent,
-    MapaSiteComponent
+    MapaSiteComponent,
+    BreadcrumbComponent
 
   ],
   imports: [
@@ -25,7 +27,8 @@ import { MapaSiteComponent } from './mapa-site/mapa-site.component';
     MenuComponent,
     FooterComponent,
     MapaSiteComponent,
-    TafMaterialModule
+    TafMaterialModule,
+    BreadcrumbComponent
   ],
   bootstrap: [HeaderComponent],
 })

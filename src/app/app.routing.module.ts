@@ -12,13 +12,19 @@ export const routes: Routes = [
 		path:'inicio',
 		loadChildren: './home/home.module#HomeModule',
     data: { breadcrumb: 'inicio' }
+	},
+
+	{
+		path:'estamos-fazendo',
+		loadChildren: './paginas/estamos-fazendo/estamos-fazendo.module#EstamosFazendoModule',
+    data: { breadcrumb: 'estamos-fazendo' }
 	}
 
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, { useHash: true })
   ],
   exports: [
     RouterModule

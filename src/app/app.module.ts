@@ -4,7 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { AppRoutingModule } from './app.routing.module';
-
+import { EstamosFazendoModule } from './paginas/estamos-fazendo/estamos-fazendo.module';
+import { MenuService } from './core/header/menu/menu.service';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -16,9 +17,10 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     CoreModule,
     HomeModule,
+    EstamosFazendoModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
