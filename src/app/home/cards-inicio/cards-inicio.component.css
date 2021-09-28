@@ -1,9 +1,8 @@
 .container-cards{
 
   display: flex;
-  align-items: center;
-  justify-content: center;
-
+  justify-content: space-between;
+  width: 1330px
 
 }
 .linha-cards{
@@ -21,6 +20,15 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
+  color: #083A56;
+
+}
+.dadoEnfase2{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 35px;
   color: #083A56;
 
 }
@@ -106,9 +114,14 @@
   display: flex;
   justify-content: center;
 }
+
 .box-cards{
   background: #E4F8CB;
   width: 100%;
   margin-top: 15px;
+  margin-bottom: 15px;
   padding: 15px;
+  border-top: 3px dashed #b4d8da;
+  border-bottom: 3px dashed #b4d8da;
+
 }
