@@ -1,0 +1,54 @@
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-main{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+
+  }
+}
+
+header {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+
+main {
+  grid-column: span 3;
+
+
+}
+
+
+footer {
+  grid-column: span 3;
+  padding-left:10%;
+  padding-right:10%;
+  text-align: center;
+  background: #083A56;
+}
+
+.container-mapa{
+  grid-column: span 3;
+  background: #E6F7FA;
+}
+
+.basic-container {
+  padding: 50px;
+}

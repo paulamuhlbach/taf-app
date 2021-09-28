@@ -1,0 +1,24 @@
+.container-inicio{
+
+
+  display: flex;
+
+  flex-direction: column;
+
+
+}
+.box-inicio{
+  justify-content: space-between;
+
+
+}
+
+.inicio-linha1{
+  display: flex;
+  justify-content: space-between;
+
+}
+.inicio-linha2{
+  background: #E4F8CB;
+
+}

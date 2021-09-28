@@ -1,0 +1,95 @@
+
+.cabecalho{
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  box-shadow: 0px 4px 6px rgba(166, 163, 163, 0.25);
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #287CAB;
+}
+.img-logo{
+  margin-right: 5px;
+}
+
+.container-banner{
+  display: flex;
+  justify-content:space-between;
+  border-bottom: 2px dashed #4691bd;
+  margin-bottom: 5px;
+  width: 1440px;
+  text-align: center;
+}
+.identificacao{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.texto-indentificacao{
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  border-left: 2px solid #7CBDC7;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.titulo-portal{
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #A7D7DE;
+  text-align: left;
+  }
+.instituicao{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.045em;
+
+  color: #FFFFFF;
+}
+.container-links{
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 120px;
+}
+.nav-banner{
+  display: flex;
+  justify-content:space-between;
+  padding-bottom: 20px;
+}
+.acessibilidade{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.txt-acessibilidade{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: #ADDCF6;
+}
+#container{
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+}
+.container-pesquisa{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  padding-top: 20px;
+}

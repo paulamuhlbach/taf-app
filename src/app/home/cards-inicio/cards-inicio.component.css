@@ -1,0 +1,114 @@
+.container-cards{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.linha-cards{
+  display: flex;
+  justify-content: space-between;
+}
+.linha-opcoes{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.dadoEnfase1{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #083A56;
+
+}
+.linha-dados-card{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 35px;
+  color: #083A56;
+}
+.dados-card{
+  background: #E6F7FA;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+  width: 158px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+#botao-mais{
+  margin-top: -70px;
+  margin-left: 190px;
+  position: relative;
+  z-index: 10;
+
+}
+.valor{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #083A56;
+  margin-left: 5px;
+
+}
+.linha-baixo-botao{
+  display: flex;
+  justify-content: space-between;
+}
+.desc-botao{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #083A56;
+
+}
+.linha-bt-resumo{
+  width: 160px;
+  margin-top: 15px;
+  margin-left:11%;
+  display: flex;
+  justify-content: center;
+}
+.bt-resumo{
+  background: #A7D7DE;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  flex-direction: column;
+  cursor: pointer;
+}
+#img-card{
+  margin-bottom: -50px;
+  position: relative;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+}
+.box-cards{
+  background: #E4F8CB;
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+}

@@ -1,0 +1,33 @@
+.item-menu-principal{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: left;
+  color:#d4eef1;
+  border-right: 1px dashed #448ab3;
+}
+.item-menu-principal:first-child{
+  border-left: 1px dashed #448ab3;
+}
+.container-menu{
+  height: 35px;
+  width: 1440px;
+  display: flex;
+  justify-content:space-between;
+  margin: 0;
+}
+
+#container{
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: #4898C5;
+  box-shadow: 0px 4px 6px rgba(166, 163, 163, 0.25);
+}
+

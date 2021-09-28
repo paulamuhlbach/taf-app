@@ -1,0 +1,59 @@
+.container-fazendo{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.colunas{
+  display: flex;
+
+}
+.linha-fazendo{
+  display: flex;
+  margin-right: 20%;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.coluna1{
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  width: 110px;
+  margin-right: 50px;
+
+}
+.img-widget{
+  width: 110px;
+  text-align: left;
+
+}
+
+.linha-1{
+  font-size: 12px;
+  line-height: 14px;
+  color: #287CAB;
+  margin-bottom: 15px;
+
+}
+.dado{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #287CAB;
+
+}
+
+.saiba{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #287CAB;
+  padding-top: 15px;
+  text-align: right;
+}
