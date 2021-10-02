@@ -1,33 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeRoutes } from './home/home.routing.module';
+import { EstamosFazendoRoutes } from './paginas/estamos-fazendo/estamos-fazendo-routing.module';
 
 export const routes: Routes = [
 	{
 		path: '',
-		redirectTo: '/inicio',
+		redirectTo: 'inicio',
 		pathMatch: 'full'
 	},
+  ...HomeRoutes,
+  ...EstamosFazendoRoutes
 
-	{
-		path:'inicio',
-		loadChildren: './home/home.module#HomeModule',
-    //data: { breadcrumb: 'inicio' }
-	},
-
-	{
-		path:'estamos-fazendo',
-		loadChildren: './paginas/estamos-fazendo/estamos-fazendo.module#EstamosFazendoModule',
-    //data: { breadcrumb: 'estamos-fazendo' }
-	}
 
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { useHash: true })
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}

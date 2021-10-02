@@ -94,3 +94,20 @@
   flex-direction: column;
   padding-top: 20px;
 }
+.container-covid{
+  padding-top: 15px;
+}
+.tit-covid{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  /* or 142% */
+
+  display: flex;
+  align-items: center;
+
+  /* TAF-Azul02-03 */
+
+  color: #A7D7DE;
+}

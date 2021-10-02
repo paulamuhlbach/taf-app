@@ -13,12 +13,13 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     CoreModule,
     HomeModule,
     EstamosFazendoModule,
-    AppRoutingModule
+
   ],
   providers: [MenuService],
   bootstrap: [AppComponent]

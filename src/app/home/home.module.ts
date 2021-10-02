@@ -6,7 +6,7 @@ import { WidgetReceitaDespesaComponent } from './widget-receita-despesa/widget-r
 import { WidgetRenunciaReceitaComponent } from './widget-renuncia-receita/widget-renuncia-receita.component';
 import { WidgetOrcamentoComponent } from './widget-orcamento/widget-orcamento.component';
 import { CardsInicioComponent } from './cards-inicio/cards-inicio.component';
-import { HomeRoutingModule } from './home.routing.module'
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -20,7 +20,7 @@ import { HomeRoutingModule } from './home.routing.module'
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    RouterModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
 })

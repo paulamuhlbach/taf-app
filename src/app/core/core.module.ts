@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TafMaterialModule } from '../taf-material.module'
 import { HeaderComponent } from './header/header.component';
@@ -7,6 +7,10 @@ import { FooterComponent } from './footer/footer.component';
 import { FormConsultaPortalComponent } from './header/form-consulta-portal/form-consulta-portal.component';
 import { MapaSiteComponent } from './mapa-site/mapa-site.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { RouterModule } from '@angular/router';
+import { TafDatepickerComponent } from './datepicker/datepicker.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,12 +19,16 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     MenuComponent,
     FormConsultaPortalComponent,
     MapaSiteComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    TafDatepickerComponent
 
   ],
   imports: [
     CommonModule,
     TafMaterialModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     HeaderComponent,
@@ -28,7 +36,9 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     FooterComponent,
     MapaSiteComponent,
     TafMaterialModule,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    TafDatepickerComponent,
+    FormsModule
   ],
   bootstrap: [HeaderComponent],
 })

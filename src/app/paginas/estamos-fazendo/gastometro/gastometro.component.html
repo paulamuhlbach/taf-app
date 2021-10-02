@@ -1,0 +1,57 @@
+<div class="container-acoes">
+  <div class="container-breadcrumb">
+    <div class="breadcrumb">
+      <div class="linha1breadcrumb"></div><div class="titulobreadcrumb"><span class="caminhobreadcrumb"> Estamos Fazendo / </span> Gastômetro </div><div class="linha2breadcrumb"></div>
+    </div>
+
+  </div>
+
+<div class="container-gastometro">
+  <div class="header-gastometro">
+    <div class="title"><h1>Gastômetro</h1></div>
+    <div class="infos-gastrometro">O Gastômetro é um instrumento de medição dos principais gastos da prefeitura em relação ao seu orçamento. Selecione um período para filtrar os dados.</div>
+    <div class="datepiker-gastometro">
+      <div class="data-de">
+      <mat-label class="labeldata">De:</mat-label>
+      <taf-datepicker>
+        placeholder="Pesquisa por data"
+        width="100%"
+        [ngModel]="dataTeste"
+        name="teste"
+        (valueChanged)="handleInput($event)"
+      </taf-datepicker>
+    </div>
+    <div class="data-ate">
+      <mat-label class="labeldata">Até:</mat-label>
+      <taf-datepicker>
+        placeholder="Pesquisa por data"
+        width="100%"
+        [ngModel]="dataTeste"
+        name="teste"
+        (valueChanged)="handleInput($event)"
+      </taf-datepicker>
+    </div>
+  </div>
+  <div class="box-gastometro">
+    <div class="linha-gastometro">
+      <div class="img-gastometro"><img src="../../../../assets/images/estamos-fazendo/gastometro/pessoal.svg"></div>
+      <div class="img-gastometro"><img src="../../../../assets/images/estamos-fazendo/gastometro/saude.svg"></div>
+      <div class="img-gastometro"><img src="../../../../assets/images/estamos-fazendo/gastometro/educacao.svg"></div>
+      <div class="img-gastometro"><img src="../../../../assets/images/estamos-fazendo/gastometro/transito.svg"></div>
+    </div>
+    <div class="linha-gastometro">
+
+      <div class="img-gastometro"><img src="../../../../assets/images/estamos-fazendo/gastometro/vias-publicas.svg"></div>
+      <div class="img-gastometro"><img src="../../../../assets/images/estamos-fazendo/gastometro/assistencia-social.svg"></div>
+      <div class="img-gastometro"><img src="../../../../assets/images/estamos-fazendo/gastometro/publicidade.svg"></div>
+      <div class="img-gastometro"><img src="../../../../assets/images/estamos-fazendo/gastometro/cultura.svg"></div>
+    </div>
+    <div class="linha-gastometro">
+
+      <div class="img-gastometro"><img src="../../../../assets/images/estamos-fazendo/gastometro/esporte.svg"></div>
+    </div>
+  </div>
+
+
+
+</div>

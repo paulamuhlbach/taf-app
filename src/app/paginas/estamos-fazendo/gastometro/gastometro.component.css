@@ -1,3 +1,42 @@
+.container-gastometro{
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.infos-gastrometro{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #095783;
+  display: flex;
+}
+.box-gastometro{
+  background: #F4FBFE;
+  border: 2px solid #89C9ED;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 1300px;
+  justify-content: space-between;
+}
+.linha-gastometro{
+  display: flex;
+  flex-direction: row;
+  padding-left: 45px;
+  padding-right: 55px;
+}
+.img-gastometro{
+  margin: 35px;
+}
 .container-acoes{
   display: flex;
 
@@ -5,25 +44,21 @@
 }
 .breadcrumb{
 
-  width: 1300px;
+  width: 1320px;
   margin-left:25px;
   padding-top: 20px
 
 }
-a{
-  text-decoration: none;
+.container-breadcrumb{
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
-.link-breadcrumb{
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  background-color: #fff;
-
-  color: #095783;
-}
-
 .titulobreadcrumb{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -50,77 +85,6 @@ a{
   border-bottom: 2px dashed #a5c6da;
   padding: 5px;
 }
-
-.linha1-infos{
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 30px;
-
-  color: #787878;
-
-}
-
-.box-acoes{
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-
-.filtros-acoes{
-  height: 100%;
-  min-height: 100%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-
-
-.toogle-acoes{
-  font-family: 'Roboto', sans-serif;
-}
-
-.cards-acoes{
-  height: 100%;
-  min-height: 100%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.container-cards-acoes{
-  display: flex;
-}
-
-.coluna1-acoes{
-  font-family: 'Roboto', sans-serif;
-}
-
-.coluna2-acoes{
-  font-family: 'Roboto', sans-serif;
-}
-
-.container-filtros{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1380px;
-}
-
-
-
-
 h1{
   font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -140,7 +104,7 @@ color: #095783;
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
-  width: 1300px;
+  width: 1320px;
   margin: 20px;
   padding-left: 20px;
 }
@@ -180,15 +144,4 @@ color: #095783;
 }
 .data-ate{
   padding-left: 20px;
-}
-
-
-.infos-gastrometro{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 22px;
-  color: #095783;
-  display: flex;
 }

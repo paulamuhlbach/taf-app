@@ -1,0 +1,139 @@
+
+.taf-datepicker {
+  &.mat-form-field {
+    display: block;
+  }
+
+  .mat-form-field-flex {
+    height: 32px;
+    background-color: #fff;
+    padding: 0 8px;
+    border: 1px solid #CEE7F5;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .mat-form-field-label span {
+        color: #095783;
+        transition: color 0.2s;
+      }
+    }
+  }
+
+  &.ng-invalid:not(.mat-focused) .mat-form-field-flex {
+    border: 1px solid #E04167;
+  }
+
+  .mat-form-field-infix {
+    height: 100%;
+    padding: 0;
+    border: none;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .mat-form-field-underline,
+  .mat-form-field-subscript-wrapper {
+    display: none;
+  }
+
+  .mat-form-field-label {
+    transform: translateY(0) scale(1) !important;
+    width: 100% !important;
+    opacity: 1;
+
+    top: 0;
+    height: 100%;
+
+    display: flex !important;
+    align-items: center;
+  }
+
+  &.mat-focused .mat-form-field-label,
+  &.mat-form-field-should-float .mat-form-field-label {
+    opacity: 0;
+  }
+
+  &.mat-focused {
+    .mat-button-wrapper {
+      color: #095783;
+    }
+  }
+
+  .mat-form-field-label span {
+    font-size: 14px;
+    line-height: 18px;
+    color: #095783;
+    transition: color 0.2s;
+  }
+
+  .mat-button-wrapper {
+    font-size: 18px;
+  }
+
+  .mat-datepicker-toggle-active {
+    .mat-button-wrapper {
+      color: #CEE7F5 !important;
+    }
+  }
+
+  .mat-form-field-label-wrapper {
+    top: 0;
+    padding: 0;
+  }
+
+  .mat-input-element {
+    font-size: 14px;
+    line-height: 18px;
+    color: #095783;
+    caret-color: #095783 !important;
+  }
+
+  .mat-input-element.mat-form-field-autofill-control {
+    height: 100%;
+  }
+
+  .mat-form-field-suffix,
+  .mat-datepicker-toggle {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .mat-icon-button {
+    height: 22px;
+    width: 22px;
+  }
+
+  input {
+    min-width: 82px;
+  }
+}
+
+.mat-calendar {
+  border-radius: 6px;
+
+  .mat-icon-button {
+    color: #095783;
+  }
+
+  .mat-calendar-body-today:not(.mat-calendar-body-selected) {
+    border-color: #095783;
+  }
+
+  .mat-calendar-body-cell-content.mat-calendar-body-selected {
+    background-color: #095783;
+  }
+}
+
+.firstLabel {
+  width: 100%;
+}
+
+.secondInput {
+  padding-left: 8px !important;
+}

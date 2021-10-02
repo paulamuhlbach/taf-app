@@ -3,14 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PgInicioComponent } from './pg-inicio/pg-inicio.component';
 
 
-export const routes: Routes = [
+export const HomeRoutes: Routes = [
         { path: '', component: PgInicioComponent },
 
   ];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule]
-  })
-
-export class HomeRoutingModule { }

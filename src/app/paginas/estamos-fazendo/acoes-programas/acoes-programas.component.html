@@ -1,1 +1,45 @@
-<p>acoes-programas works!</p>
+<div class="container-acoes">
+  <div class="container-breadcrumb">
+    <div class="breadcrumb">
+      <div class="linha1breadcrumb"></div><div class="titulobreadcrumb"><span class="caminhobreadcrumb"> <a [routerLink]="['/']" class="link-breadcrumb">Início</a> /
+        <a [routerLink]="['/estamos-fazendo']" class="link-breadcrumb">Estamos Fazendo</a> / </span> Ações e Programas </div><div class="linha2breadcrumb"></div>
+    </div>
+
+  </div>
+
+  <div class="header-gastometro">
+    <div class="title"><h1>Ações e Programas</h1></div>
+    <div class="infos-gastrometro">Aqui é apresentado a listagem das realizações da prefeitura, por perídodo. Também é possível selecionar os programas e ações conforme a esfera de governo dos recursos envolvidos.</div>
+    <div class="datepiker-gastometro">
+      <div class="data-de">
+      <mat-label class="labeldata">De:</mat-label>
+      <taf-datepicker>
+        placeholder="Pesquisa por data"
+        width="100%"
+        [ngModel]="dataTeste"
+        name="teste"
+        (valueChanged)="handleInput($event)"
+      </taf-datepicker>
+    </div>
+    <div class="data-ate">
+      <mat-label class="labeldata">Até:</mat-label>
+      <taf-datepicker>
+        placeholder="Pesquisa por data"
+        width="100%"
+        [ngModel]="dataTeste"
+        name="teste"
+        (valueChanged)="handleInput($event)"
+      </taf-datepicker>
+    </div>
+
+  </div>
+
+  </div>
+    <div class="cards-acoes">
+      <div class="container-cards-acoes">
+        <img src="../../../../assets/images/prototipo/acoes-programas-fake.svg">
+      </div>
+    </div>
+
+</div>
+

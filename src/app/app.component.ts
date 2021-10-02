@@ -7,6 +7,11 @@ import { MenuService } from './core/header/menu/menu.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+export class AppComponent {
+
+  title = 'taf-app';
+/*
 export class AppComponent implements OnInit {
 
   title = 'taf-app';
@@ -51,5 +56,5 @@ export class AppComponent implements OnInit {
         console.log(this.breadcrumbList);
       }
     });
-  }
+  }*/
 }

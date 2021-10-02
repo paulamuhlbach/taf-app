@@ -1,0 +1,33 @@
+<mat-form-field *ngIf="!range" [style.width]="width" class="taf-datepicker">
+    <input
+        matInput
+        [matDatepicker]="picker"
+        #input
+        [(ngModel)]="value"
+        [value]="val"
+        [placeholder]="placeholder"
+        (keyup)="applyMask($event)"
+        (blur)="onChangeValue()"
+        maxlength="10"
+    />
+    <mat-datepicker-toggle matSuffix [for]="picker">
+        <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field *ngIf="range" [style.width]="width" class="tcers-datepicker">
+    <mat-label class="firstLabel"><span>Data inicial</span></mat-label>
+    <input matInput [matDatepicker]="picker1" [formControl]="date" [(ngModel)]="value1" [value]="val1" disabled>
+    <mat-datepicker-toggle matSuffix [for]="picker1" *ngIf="changeIcon">
+        <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker1 disabled="false"></mat-datepicker>
+    <span>a</span>
+    <mat-label><span>Data final</span></mat-label>
+    <input matInput class="secondInput" [matDatepicker]="picker2" [min]="minDate" [(ngModel)]="value2" [value]="date.value || val2" disabled>
+    <mat-datepicker-toggle matSuffix [for]="picker2" *ngIf="!changeIcon">
+        <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker2 disabled="false"></mat-datepicker>
+</mat-form-field>
