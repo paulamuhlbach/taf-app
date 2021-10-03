@@ -3,13 +3,17 @@
   <div id="container" >
     <div class="container-banner">
 
-    <div class="identificacao">
-      <div class="img-logo"><img src="../../../assets/images/header/brasao_oficial.svg"></div>
-      <div class="texto-indentificacao">
-        <div class="titulo-portal">TRANSPARÊNCIA</div>
-        <div class="instituicao">Prefeitura de Picos Gêmeos</div>
-      </div>
-    </div>
+      <a [routerLink]="['/']">
+        <div class="identificacao">
+          <div class="img-logo">
+            <img src="../../../assets/images/header/brasao_oficial.svg" title="Brasão do Município de Picos Gêmeos" alt= "Brasão do Município de Picos Gêmeos">
+          </div>
+          <div class="texto-indentificacao">
+            <div class="titulo-portal">TRANSPARÊNCIA</div>
+            <div class="instituicao">Prefeitura de Picos Gêmeos</div>
+          </div>
+        </div>
+      </a>
 
     <div class="container-pesquisa">
       <app-form-consulta-portal></app-form-consulta-portal>

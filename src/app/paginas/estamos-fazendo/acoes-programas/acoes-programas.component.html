@@ -1,45 +1,91 @@
 <div class="container-acoes">
   <div class="container-breadcrumb">
     <div class="breadcrumb">
-      <div class="linha1breadcrumb"></div><div class="titulobreadcrumb"><span class="caminhobreadcrumb"> <a [routerLink]="['/']" class="link-breadcrumb">Início</a> /
-        <a [routerLink]="['/estamos-fazendo']" class="link-breadcrumb">Estamos Fazendo</a> / </span> Ações e Programas </div><div class="linha2breadcrumb"></div>
+      <div class="linha1breadcrumb"></div>
+      <div class="titulobreadcrumb"><span class="caminhobreadcrumb"> <a [routerLink]="['/']" class="link-breadcrumb" title="Voltar para página Inicial" alt="Voltar para página Inicial">Início</a> /
+        <a [routerLink]="['/estamos-fazendo']" class="link-breadcrumb" title="Voltar para página Estamos Fazendo" alt="Voltar para página Estamos Fazendo">Estamos Fazendo</a> / </span> Ações e Programas </div>
+        <div class="linha2breadcrumb"></div>
     </div>
 
   </div>
 
-  <div class="header-gastometro">
+  <div class="container-programas-financiados">
+  <div class="header-programas-financiados">
     <div class="title"><h1>Ações e Programas</h1></div>
-    <div class="infos-gastrometro">Aqui é apresentado a listagem das realizações da prefeitura, por perídodo. Também é possível selecionar os programas e ações conforme a esfera de governo dos recursos envolvidos.</div>
-    <div class="datepiker-gastometro">
-      <div class="data-de">
-      <mat-label class="labeldata">De:</mat-label>
-      <taf-datepicker>
-        placeholder="Pesquisa por data"
-        width="100%"
-        [ngModel]="dataTeste"
-        name="teste"
-        (valueChanged)="handleInput($event)"
-      </taf-datepicker>
-    </div>
-    <div class="data-ate">
-      <mat-label class="labeldata">Até:</mat-label>
-      <taf-datepicker>
-        placeholder="Pesquisa por data"
-        width="100%"
-        [ngModel]="dataTeste"
-        name="teste"
-        (valueChanged)="handleInput($event)"
-      </taf-datepicker>
-    </div>
+    <div class="infos">Acompanhe as ações e programas realizados pela prefeitura. Selecione um período para filtrar os dados.</div>
+        <div class="box-nav">
+            <div class="datepiker-programas-financiados">
+                <div class="data-de">
+                <mat-label class="labeldata">De:</mat-label>
+                <taf-datepicker>
+                  placeholder="Pesquisa por data"
+                  width="100%"
+                  [ngModel]="dataTeste"
+                  name="teste"
+                  (valueChanged)="handleInput($event)"
+                </taf-datepicker>
+              </div>
+              <div class="data-ate">
+                <mat-label class="labeldata">Até:</mat-label>
+                <taf-datepicker>
+                  placeholder="Pesquisa por data"
+                  width="100%"
+                  [ngModel]="dataTeste"
+                  name="teste"
+                  (valueChanged)="handleInput($event)"
+                </taf-datepicker>
+              </div>
 
-  </div>
 
-  </div>
-    <div class="cards-acoes">
-      <div class="container-cards-acoes">
-        <img src="../../../../assets/images/prototipo/acoes-programas-fake.svg">
+
+            </div>
+            <div class="notificacoes">
+
+              <div class="compartilhar-imprimir-salvar">
+                <div class="img-comp-imp-sal">
+                  <img src="../../../../assets/images/widgets/compartilhar-claro.svg" height="20px" title="Compartilhar" alt="Compartilhar">
+                </div>
+                <div class="img-comp-imp-sal">
+                  <img src="../../../../assets/images/widgets/download-claro.svg" height="20px" title="Salvar conteúdo" alt="Salvar Conteúdo">
+                </div>
+                <div class="img-comp-imp-sal">
+                  <img src="../../../../assets/images/widgets/imprimir-claro.svg"  title="Imprimir conteúdo" alt="Imprimir Conteúdo">
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+     </div>
+        <div class="container-box-programas">
+          <div class="infos-resultados">Exibindo X resultados de Y encontrados.</div>
+          <div class="box">
+
+            <div class="linha">
+              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/pessoal.svg"></div>
+              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/saude.svg"></div>
+              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/educacao.svg"></div>
+              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/transito.svg"></div>
+            </div>
+            <div class="linha">
+
+              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/vias-publicas.svg"></div>
+              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/assistencia-social.svg"></div>
+              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/publicidade.svg"></div>
+              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/cultura.svg"></div>
+            </div>
+            <div class="linha">
+
+              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/esporte.svg"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="recebe-notfic">
+          <label class="container">Quero receber notificações quando houver novas ações ou programas!
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
       </div>
-    </div>
-
-</div>
+ </div>
 
