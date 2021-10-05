@@ -1,0 +1,36 @@
+.labeldata{
+  font-family: 'Roboto', sans-serif;
+  color: #095783;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.inputdata{
+  font-family: 'Roboto', sans-serif;
+  color: #095783;
+  border: none !important;
+}
+::ng-deep .mat-calendar-header{background-color: #CEE7F5;}
+::ng-deep .mat-form-field{
+
+  background-color: #fff;
+  color: #095783;
+  width: 120px;
+}
+::ng-deep .mat-label{
+
+  color: #095783;
+}
+::ng-deep .mat-datepicker-toggle{
+  color: #095783;
+}
+.data-ate{
+  padding-left: 20px;
+}
+.datepiker{
+  padding-top: 20px;
+  display: flex;
+
+}

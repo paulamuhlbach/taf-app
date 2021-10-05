@@ -30,8 +30,6 @@
   display: flex;
 }
 .box{
-  background: #F4FBFE;
-  border: 2px solid #89C9ED;
   box-sizing: border-box;
   border-radius: 8px;
   display: flex;

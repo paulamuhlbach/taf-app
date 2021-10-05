@@ -1,0 +1,14 @@
+.notificacoes{
+  padding-top: 40px;
+  width: 250px;
+  padding-right: 35px;
+}
+.compartilhar-imprimir-salvar{
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 55px;
+}
+.img-comp-imp-sal{
+  padding-left: 30px;
+  cursor: pointer;
+}

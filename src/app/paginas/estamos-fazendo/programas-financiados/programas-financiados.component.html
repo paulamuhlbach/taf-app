@@ -12,47 +12,12 @@
   <div class="header-programas-financiados">
     <div class="title"><h1>Programas Financiados</h1></div>
     <div class="infos">O Gastômetro é um instrumento de medição dos principais gastos da prefeitura em relação ao seu orçamento. Selecione um período para filtrar os dados.</div>
-        <div class="box-nav">
-            <div class="datepiker-programas-financiados">
-                <div class="data-de">
-                <mat-label class="labeldata">De:</mat-label>
-                <taf-datepicker>
-                  placeholder="Pesquisa por data"
-                  width="100%"
-                  [ngModel]="dataTeste"
-                  name="teste"
-                  (valueChanged)="handleInput($event)"
-                </taf-datepicker>
-              </div>
-              <div class="data-ate">
-                <mat-label class="labeldata">Até:</mat-label>
-                <taf-datepicker>
-                  placeholder="Pesquisa por data"
-                  width="100%"
-                  [ngModel]="dataTeste"
-                  name="teste"
-                  (valueChanged)="handleInput($event)"
-                </taf-datepicker>
-              </div>
 
+          <div class="box-nav">
+            <datepicker-DeAte></datepicker-DeAte>
+            <menu-esfera-governo></menu-esfera-governo>
+            <menu-acoes></menu-acoes>
 
-
-            </div>
-            <div class="notificacoes">
-
-
-              <div class="compartilhar-imprimir-salvar">
-                <div class="img-comp-imp-sal">
-                  <img src="../../../../assets/images/widgets/compartilhar-claro.svg" height="20px" title="Compartilhar" alt="Compartilhar">
-                </div>
-                <div class="img-comp-imp-sal">
-                  <img src="../../../../assets/images/widgets/download-claro.svg" height="20px" title="Salvar conteúdo" alt="Salvar Conteúdo">
-                </div>
-                <div class="img-comp-imp-sal">
-                  <img src="../../../../assets/images/widgets/imprimir-claro.svg"  title="Imprimir conteúdo" alt="Imprimir Conteúdo">
-                </div>
-            </div>
-            </div>
           </div>
         </div>
 
@@ -61,22 +26,106 @@
           <div class="infos-resultados">Exibindo X resultados de Y encontrados.</div>
           <div class="box">
             <div class="linha">
-              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/pessoal.svg"></div>
-              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/saude.svg"></div>
-              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/educacao.svg"></div>
-              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/transito.svg"></div>
-            </div>
-            <div class="linha">
 
-              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/vias-publicas.svg"></div>
-              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/assistencia-social.svg"></div>
-              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/publicidade.svg"></div>
-              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/cultura.svg"></div>
-            </div>
-            <div class="linha">
+              <div class="card-acao-programa">
+                    <div class="header-card-acao-programa">
+                      <div class="img-icon-header-card"><img src="../../../../assets/images/icons/sec-habitacao 1.svg" alt="Icone da Secretaria de Habitação" title="Ver informações sobre a Secretaria de Habitação" width="40px"></div>
+                      <div class="txt-header-card">Secretaria de Habitação</div>
+                    </div>
+                    <div class="main-card-acao-programa">
+                      <div class="linha-main-card">
+                        <div class="container-linha-card">
 
-              <div class="img-programas-financiados"><img src="../../../../assets/images/estamos-fazendo/gastometro/esporte.svg"></div>
-            </div>
+                          <div class="toogle-recurso-federal">RECURSO FEDERAL</div>
+                          <div class="toogle-recurso-estadual">RECURSO ESTADUAL</div>
+                      </div>
+                      <div class="txt-card-main">Programa XXXX</div>
+
+
+                        <div class="total-valor">Total do Financiamento: R$ 124.570,59</div>
+
+
+                      </div>
+
+                        <div class="linha-main-card">
+                          <div class="container-linha-card">
+
+                            <div class="toogle-recurso-estadual">RECURSO ESTADUAL</div>
+                         </div>
+                         <div class="txt-card-main">Programa yyyy</div>
+                          <div class="total-valor">Total do Financiamento: R$ 20.000,00</div>
+                        </div>
+
+                          <div class="linha-main-card">
+                            <div class="container-linha-card">
+                              <div class="toogle-recurso-federal">RECURSO FEDERAL</div>
+                              <div class="toogle-recurso-municipal">RECURSO MUNICIPAL</div>
+                            </div>
+                            <div class="txt-card-main">Programa ZZZZ</div>
+                            <div class="total-valor">Total do Financiamento: R$ 550.000,00</div>
+                          </div>
+                    </div>
+                    <div class="footer-card-acao-programa">
+                      <div class="bt-ver-mais">Ver + no PPA*</div>
+                      <div class="txt-card-footer">Total de ações no período: 3</div>
+                    </div>
+                  </div>
+
+                  <div class="card-acao-programa">
+                    <div class="header-card-acao-programa">
+                      <div class="img-icon-header-card"><img src="../../../../assets/images/icons/sec-obras.svg" alt="Icone da Secretaria de Obras" title="Ver informações sobre a Secretaria de Obras" width="40px"></div>
+                      <div class="txt-header-card">Secretaria Obras</div>
+                    </div>
+                    <div class="main-card-acao-programa">
+                      <div class="linha-main-card">
+                        <div class="container-linha-card">
+
+                          <div class="toogle-recurso-federal">RECURSO FEDERAL</div>
+                      </div>
+                      <div class="txt-card-main">Programa XXXX</div>
+
+
+                        <div class="total-valor">Total do Financiamento: R$ 124.570,59</div>
+
+
+                      </div>
+
+                        <div class="linha-main-card">
+                          <div class="container-linha-card">
+
+                            <div class="toogle-recurso-estadual">RECURSO ESTADUAL</div><div class="toogle-recurso-municipal">RECURSO MUNICIPAL</div>
+                         </div>
+                         <div class="txt-card-main">Programa yyyy</div>
+                          <div class="total-valor">Total do Financiamento: R$ 20.000,00</div>
+                        </div>
+
+                          <div class="linha-main-card">
+                            <div class="container-linha-card">
+                              <div class="toogle-recurso-municipal">RECURSO MUNICIPAL</div>
+                            </div>
+                            <div class="txt-card-main">Programa ZZZZ</div>
+                            <div class="total-valor">Total do Financiamento: R$ 550.000,00</div>
+                          </div>
+
+                          <div class="linha-main-card">
+                            <div class="container-linha-card">
+                              <div class="toogle-recurso-federal">RECURSO FEDERAL</div>
+                              <div class="toogle-recurso-municipal">RECURSO MUNICIPAL</div>
+                            </div>
+                            <div class="txt-card-main">Programa AAAAA</div>
+                            <div class="total-valor">Total do Financiamento: R$ 550.000,00</div>
+                          </div>
+                    </div>
+                    <div class="footer-card-acao-programa">
+                      <div class="bt-ver-mais">Ver + no PPA*</div>
+                      <div class="txt-card-footer">Total de ações no período: 3</div>
+                    </div>
+                  </div>
+
+
+              </div>
+
+
           </div>
 
         </div>

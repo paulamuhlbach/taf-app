@@ -30,8 +30,6 @@
   display: flex;
 }
 .box{
-  background: #F4FBFE;
-  border: 2px solid #89C9ED;
   box-sizing: border-box;
   border-radius: 8px;
   display: flex;
@@ -275,4 +273,157 @@ a{
   padding-top: 20px;
   padding-bottom: 20px;
   margin-right: 35px;
+}
+
+
+.card-acao-programa{
+  width: 500px;
+  padding: 30px;
+}
+.header-card-acao-programa{
+  display: flex;
+  background: #E4F8CB;
+  border: 2px solid #89C9ED;
+  box-sizing: border-box;
+  border-radius: 7px 7px 0px 0px;
+}
+.img-icon-header-card{
+  padding: 10px;
+  cursor: pointer;
+
+}
+.txt-header-card{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #287CAB;
+  padding-top: 20px;
+  padding-left: 20%;
+}
+.main-card-acao-programa{
+  background: #FFFFFF;
+  border-left: 2px solid #89C9ED;
+  border-right: 2px solid #89C9ED;
+
+}
+.linha-main-card{
+  border-bottom: 2px solid #89C9ED;
+}
+.txt-card-main{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4A4A4A;
+  padding: 10px;
+}
+.total-valor{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  color: #095783;
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.footer-card-acao-programa{
+  background: #CEE7F5;
+  border-bottom: 2px solid #89C9ED;
+  border-left: 2px solid #89C9ED;
+  border-right: 2px solid #89C9ED;
+  box-sizing: border-box;
+  border-radius: 0px 0px 7px 7px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.total-valor-footer{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #095783;
+}
+.txt-card-footer{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #095783;
+}
+
+.toogle-recurso-federal{
+  background: #639622;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  padding: 5px;
+  height: 15px;
+  margin: 10px;
+}
+
+.toogle-recurso-estadual{
+  background: #E04167;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  padding: 5px;
+  height: 15px;
+  margin: 10px;
+}
+
+.toogle-recurso-municipal{
+  background: #579EA8;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  padding: 5px;
+  height: 15px;
+  margin: 10px;
+}
+.container-linha-card{
+  display: flex;
+  justify-content: flex-end;
+}
+.infos-financiamento{
+  display: flex;
+  justify-content: space-between;
+}
+.bt-ver-mais{
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: #FFFFFF;
+  background: #095783;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+
 }

@@ -8,6 +8,7 @@ import { GastometroComponent } from './gastometro/gastometro.component';
 import { ProgramasFinanciadosComponent } from './programas-financiados/programas-financiados.component';
 import { RouterModule } from '@angular/router';
 import { TafMaterialModule } from '../../taf-material.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TafMaterialModule } from '../../taf-material.module';
     CommonModule,
     CoreModule,
     TafMaterialModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class EstamosFazendoModule { }

@@ -5,6 +5,7 @@ import { WidgetEstamosFazendoComponent } from './widget-estamos-fazendo/widget-e
 import { WidgetReceitaDespesaComponent } from './widget-receita-despesa/widget-receita-despesa.component';
 import { WidgetRenunciaReceitaComponent } from './widget-renuncia-receita/widget-renuncia-receita.component';
 import { WidgetOrcamentoComponent } from './widget-orcamento/widget-orcamento.component';
+import { PaginaIndisponivelComponent } from './pagina-indisponivel/pagina-indisponivel.component';
 import { CardsInicioComponent } from './cards-inicio/cards-inicio.component';
 import { RouterModule } from '@angular/router';
 
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
     WidgetReceitaDespesaComponent,
     WidgetRenunciaReceitaComponent,
     WidgetOrcamentoComponent,
-    CardsInicioComponent
+    CardsInicioComponent,
+    PaginaIndisponivelComponent
   ],
   imports: [
     CommonModule,

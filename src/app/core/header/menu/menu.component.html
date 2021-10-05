@@ -10,51 +10,68 @@
 
   <button mat-button [matMenuTriggerFor]="licitacoesContratos" class="item-menu-principal">Licitações e Contratos<mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-menu #licitacoesContratos="matMenu" xPosition="after">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Editais</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Realizadas</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Em andamento</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">LICITACON</button>
   </mat-menu>
 
   <button mat-button [matMenuTriggerFor]="receitasDespesas" class="item-menu-principal">Receitas e Despesas<mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-menu #receitasDespesas="matMenu" xPosition="after">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Receitas</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Despesas</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Renúncia de Receitas</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Prestação de Contas</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Lei de Responsabilidade Fiscal</button>
   </mat-menu>
 
   <button mat-button [matMenuTriggerFor]="gastosPessoal" class="item-menu-principal">Pessoal<mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-menu #gastosPessoal="matMenu" xPosition="after">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Dados</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Cargos</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Salários</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Diárias e Passagens</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Treinamentos e Eventos</button>
   </mat-menu>
 
-  <button mat-button [matMenuTriggerFor]="conveniosTransferencias" class="item-menu-principal">Repasses<mat-icon>keyboard_arrow_down</mat-icon></button>
+  <button mat-button [matMenuTriggerFor]="conveniosTransferencias" class="item-menu-principal">Convênios<mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-menu #conveniosTransferencias="matMenu" xPosition="after">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
+    <button mat-menu-item [routerLink]="['/convenios/informacoes']">Informações</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">SINCOV</button>
   </mat-menu>
 
   <button mat-button [matMenuTriggerFor]="paticipacaoSocial" class="item-menu-principal">Participação Social <mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-menu #paticipacaoSocial="matMenu" xPosition="after">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Ouvidoria</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Audiências e Consultas Públicas</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Consórcios e Órgãos Colegiados</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Outras ações</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Serviço de Informações ao Cidadão</button>
+
   </mat-menu>
 
   <button mat-button [matMenuTriggerFor]="auditorias" class="item-menu-principal">Auditorias<mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-menu #auditorias="matMenu" xPosition="after">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
+    <button mat-menu-item>Consulta processos do TCE-RS</button>
+    <button mat-menu-item [routerLink]="['/auditorias']">Relatórios de Auditoria Interna</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Controle Interno</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Controladoria-Geral do Município</button>
   </mat-menu>
 
-  <button mat-button [matMenuTriggerFor]="informacoesClassificadas" class="item-menu-principal">Informações - SIC<mat-icon>keyboard_arrow_down</mat-icon></button>
-  <mat-menu #informacoesClassificadas="matMenu" xPosition="after">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu>
-
+  <button mat-button class="item-menu-principal">Informações - SIC</button>
 
   <button mat-button [matMenuTriggerFor]="institucional" class="item-menu-principal">Sobre a prefeitura<mat-icon>keyboard_arrow_down</mat-icon></button>
   <mat-menu #institucional="matMenu" xPosition="after">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
+    <button mat-menu-item [routerLink]="['/institucional/gestores']">Gestores</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Organograma</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Competências</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Legislação</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Relatório de Acompanhamento de Projetos e Execução de Obras Públicas</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Relatório de Gestão Fiscal</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Relatório Resumido de Execução Orçamentária</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Horário de Atendimento</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Endereços e Contatos</button>
+    <button mat-menu-item [routerLink]="['/indisponivel']">Site Institucional</button>
   </mat-menu>
 
 </div>

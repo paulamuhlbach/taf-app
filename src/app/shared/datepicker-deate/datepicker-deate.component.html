@@ -1,0 +1,22 @@
+<div class="datepiker">
+  <div class="data-de">
+    <mat-label class="labeldata">De:</mat-label>
+    <taf-datepicker>
+      placeholder="Pesquisa por data"
+      width="100%"
+      [ngModel]="dataTeste"
+      name="teste"
+      (valueChanged)="handleInput($event)"
+    </taf-datepicker>
+  </div>
+  <div class="data-ate">
+    <mat-label class="labeldata">Até:</mat-label>
+    <taf-datepicker>
+      placeholder="Pesquisa por data"
+      width="100%"
+      [ngModel]="dataTeste"
+      name="teste"
+      (valueChanged)="handleInput($event)"
+    </taf-datepicker>
+  </div>
+</div>

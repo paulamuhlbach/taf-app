@@ -4,7 +4,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { AppRoutingModule } from './app.routing.module';
+import { AuditoriasModule } from './paginas/auditorias/auditorias.module';
 import { EstamosFazendoModule } from './paginas/estamos-fazendo/estamos-fazendo.module';
+import { InstitucionalModule } from './paginas/institucional/institucional.module';
+import { ConveniosModule } from './paginas/convenios/convenios.module';
 import { MenuService } from './core/header/menu/menu.service';
 import { AppComponent } from './app.component';
 
@@ -18,7 +21,10 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     CoreModule,
     HomeModule,
+    AuditoriasModule,
     EstamosFazendoModule,
+    InstitucionalModule,
+    ConveniosModule
 
   ],
   providers: [MenuService],
